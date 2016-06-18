@@ -22,7 +22,8 @@
         }
     }
     .md {
-        a[href="#spoiler"], a[href="#team"], a[href$="#title"], a[href$="#countdown"], a[href="#matches_start"], a[href="#matches_end"] {
+        a[href="#spoiler"], a[href="#team"], a[href$="#title"], a[href$="#countdown"],
+         a[href="#matches_start"], a[href="#matches_end"], a[href="#stream"] {
             &:after {
                 display: none!important;
             }
@@ -31,29 +32,33 @@
             li:not(: first-of-type) {
                 text-align: center;
                 display: block;
-                & > a {
+                & a {
                     display: inline-block;
                 }
-                & > a[href="#spoiler"], & > a[href="#team"] {
+                & a[href="#spoiler"], & > a[href="#team"] {
                     min-width: 45px;
                     text-align: center;
                     padding: 0 3px;
                     font-weight: bolder;
                     cursor: default!important;
                 }
-                & > a[href="#team"] {
+                & a[href="#team"] {
                     color: black;
                 }
-                & > a[href$="#title"] {
+                & a[href$="#title"] {
                     width: 100%;
                     text-align: left;
                     font-weight: bolder;
                 }
-                & > a[href$="#countdown"] {
+                & a[href$="#countdown"] {
                     width: 100%;
                     text-align: left;
                     color: black;
                     cursor: default!important;
+                }
+                & a[href$="#stream"] {
+                    width: 100%;
+                    text-align: left;
                 }
             }
         }

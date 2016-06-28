@@ -170,7 +170,7 @@
                 margin-left: -21px;
                 display: block;
                 &:hover {
-                    border-left: 7px solid #367588;
+                    border-left: 7px solid @highlight;
                 }
             }
             &:nth-child(2) {
@@ -236,20 +236,15 @@
 /* Modify submit a new post, hide "submit link" button */
 
 .submit .morelink {
-    background: url(%%gray%%);
-    border: none;
-    .border-radius(5px);
+    background: #1c1c1c;
+    border: 0;
+    border-top: 3px solid #1c1c1c;
+    border-bottom: 3px solid #1c1c1c;
     &:hover {
-        background: url(%%gray%%) 0px -36px;
+        border-bottom: 3px solid @highlight;
     }
     a {
-        content: '';
-        font-size: 0;
-        &:before {
-            content: 'Submit new VoDs post';
-            font-size: 14px;
-            color: white;
-        }
+    	color: #FFF;
     }
     .nub {
         display: none;

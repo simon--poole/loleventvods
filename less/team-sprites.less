@@ -131,18 +131,22 @@
 @tw-tpa: -0px -2600px 48px 20px;
 @tw-xg: -0px -2620px 48px 20px;
 @tw-yfw: -0px -2640px 48px 20px;
+
 .sprite-width(@sprite) {
   width: extract(@sprite, 3);
 }
+
 .sprite-height(@sprite) {
   height: extract(@sprite, 4);
 }
+
 .sprite-position(@sprite) {
   @sprite-offset-x: extract(@sprite, 1);
   @sprite-offset-y: extract(@sprite, 2);
   background-position: @sprite-offset-x @sprite-offset-y;
 }
-.sprite(@sprite, @display: block) {
+
+.sprite(@sprite, @display:block) {
   .sprite-position(@sprite);
   background-repeat: no-repeat;
   overflow: hidden;
@@ -150,6 +154,7 @@
   .sprite-width(@sprite);
   .sprite-height(@sprite);
 }
+
 .icon {
-  background-image: url(../images/teams.PNG);
+  background-image: url('../images/teams.PNG');
 }

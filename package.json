@@ -17,10 +17,11 @@
     "gulp-cssmin": "*",
     "gulp-gm": "*",
     "gulp-if": "*",
-    "gulp-image-optimization": "*",
+    "gulp-imagemin": "^3.3.0",
     "gulp-less": "*",
     "gulp-rename": "*",
     "gulp-util": "*",
+    "optipng-bin": "^4.0.0",
     "sprity": "*",
     "sprity-gm": "^1.0.2",
     "sprity-less": "*"

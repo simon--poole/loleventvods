@@ -12,7 +12,7 @@ var sprity = require('sprity');
 var sprityless = require('sprity-less');
 var gm = require('gulp-gm');
 var gutil = require('gulp-util');
-var imop = require('gulp-image-optimization');
+var imagemin = require('gulp-imagemin');
 
 //Default task - watches
 gulp.task('default', ['build']);
@@ -66,11 +66,7 @@ gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
 
 gulp.task('sprites', ['generate-thumbnails'], function () {
 	return gulp.src(['images/teams.png','images/thumbnails.jpg'])
-		.pipe(imop({
-			optimizationLevel: 7,
-			progressive: true,
-			interlaced: true
-		}))
+		.pipe(imagemin())
 		.pipe(gulp.dest('images/'))
 });
 

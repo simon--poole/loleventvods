@@ -66,7 +66,7 @@ gulp.task('generate-thumbnails', ['generate-team-icons'], function () {
 
 gulp.task('sprites', ['generate-thumbnails'], function () {
 	return gulp.src(['images/teams.png','images/thumbnails.jpg'])
-		.pipe(imagemin())
+		//.pipe(imagemin())
 		.pipe(gulp.dest('images/'))
 });
 

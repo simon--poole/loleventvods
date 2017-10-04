@@ -1,20 +1,19 @@
-/* Worlds tournament icon
+//Website Promo
 
-.side {
-	a[href*="#worlds"] {
+.side	a[href$="utm_term=header_c2a"] {
 		.hide-text;
-		width: 221px!important;
-		background: url(%%header-events%%) no-repeat top left;
-		height: 125px;
+		width: 405px!important;
+		background: url(%%button-header%%) no-repeat top left;
+		height: 93px;
 		display: block;
 		position: absolute;
-		top: 19px;
+		top: 33px;
+		right: 150px;
 		z-index: 9999;
 		&:hover {
-			.bg-pos(0, -135px);
+			opacity: 0.6;
 		}
-	}
-} */
+}
 
 /* Standard Tournament icons in header */
 @header-icons-height: -121px;
@@ -26,10 +25,10 @@
   a[href*="#lck"],
   a[href*="#lpl"],
   a[href*="#nalcs"] {
-    .hide-text;
+		.hide-text;
+		display: none;
     background: url(%%header-events%%) no-repeat top left;
     height: 124px;
-    display: block;
     position: absolute;
     top: 21px;
 	z-index: 1000;

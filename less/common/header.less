@@ -41,11 +41,12 @@
 		font-size: 0!important;
 		a {
 			display: block;
-			height: 100px;
-			width: 550px;
+			height: 80px;
+			width: 340px;
 			margin-left: 30px;
-			margin-top: 13px;
+			margin-top: 23px;
 			background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+			background-size: 340px 80px;
 			overflow: hidden;
 			&:hover {
 				opacity: 0.6;
@@ -66,7 +67,7 @@
 /* Moves userbar down below header image */
 
 #header-bottom-right {
-	bottom: -35px;
+	top: 145px!important;
 	line-height: 26px;
 	padding-left: 15px;
 	border-top: 1px solid @highlight;
@@ -87,24 +88,23 @@
 	color: #bbb;
 }
 
-/* RES-specific userbar tweaks */
+// /* RES-specific userbar tweaks */
 
-#header-bottom-right.res-navTop {
-	top: 145px;
-	bottom: -34px;
-	line-height: 23px;
-	padding-left: 5px;
-	background: #1c1c1c;
-	border-top: 1px solid @highlight;
-	border-radius: 0;
-	#userbarToggle {
-		border-radius: 0;
-		background: transparent;
-		border: 0;
-		line-height: 28px;
-		color: #fff;
-	}
-}
+// #header-bottom-right.res-navTop {
+// 	top: 145px;
+// 	line-height: 23px;
+// 	padding-left: 5px;
+// 	background: #1c1c1c;
+// 	border-top: 1px solid @highlight;
+// 	border-radius: 0;
+// 	#userbarToggle {
+// 		border-radius: 0;
+// 		background: transparent;
+// 		border: 0;
+// 		line-height: 28px;
+// 		color: #fff;
+// 	}
+// }
 
 /* Hides tabmenu */
 
